@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Suscripción</title>
+</head>
+<body>
+    <h1>Formulario de Suscripción a Noticias</h1>
+    <form action="" method="post">
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="frecuencia">Frecuencia de envío:</label>
+            <select id="frecuencia" name="frecuencia">
+                <option value="diaria">Diaria</option>
+                <option value="semanal">Semanal</option>
+                <option value="mensual">Mensual</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Categorías de interés:</label>
+            <div>
+                <input type="checkbox" id="deportes" name="categorias" value="deportes">
+                <label for="deportes">Deportes</label>
+            </div>
+            <div>
+                <input type="checkbox" id="politica" name="categorias" value="politica">
+                <label for="politica">Política</label>
+            </div>
+            <div>
+                <input type="checkbox" id="economia" name="categorias" value="economia">
+                <label for="economia">Economía</label>
+            </div>
+        </div>
+
+        <div>
+            <label>Formato de envío:</label>
+            <div>
+                <input type="radio" id="html" name="formato" value="html" checked>
+                <label for="html">HTML</label>
+            </div>
+            <div>
+                <input type="radio" id="texto" name="formato" value="texto">
+                <label for="texto">Texto plano</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="comentarios">Comentarios adicionales:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Borrar">
+            <button type="button" onclick="location.href='index.html'">Cancelar</button>
+        </div>
+    </form>
+</body>
+</html>
